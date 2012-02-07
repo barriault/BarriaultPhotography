@@ -1,0 +1,25 @@
+<div class="row">
+	
+	<div class="span9">
+		<% if user_signed_in? -%>
+		<%= link_to 'New Post', new_post_path, :class => 'btn btn-primary' %><hr />
+		<% end -%>
+
+		<% @posts.each do |post| %>
+		  <h2>
+		    <%= link_to post.title, post %>
+				<% if user_signed_in? -%>
+		    <%= link_to 'Edit', edit_post_path(post), :class => 'btn' %>
+		    <%= link_to 'Destroy', post, :class => 'btn btn-danger', confirm: 'Are you sure?', method: :delete %>
+				<% end -%>
+			</h2>
+		  <p><%= post.content %></p>
+		  <div class="alert alert-info"><i class="icon-calendar"></i> <%= post.published_date %></div>
+		<% end %>
+	</div>
+	
+	<div class="span3">
+	</div>
+	
+</div>
+

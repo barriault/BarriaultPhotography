@@ -22,6 +22,9 @@ BarriaultPhotography::Application.configure do
 
   # Defaults to Rails.root.join("public/assets")
   # config.assets.manifest = YOUR_PATH
+  
+  # For using Devise on Heroku
+  config.assets.initialize_on_precompile = false
 
   # Specifies the header that your server uses for sending files
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
@@ -49,7 +52,8 @@ BarriaultPhotography::Application.configure do
   # config.assets.precompile += %w( search.js )
 
   # Disable delivery errors, bad email addresses will be ignored
-  # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default_url_options = { :host => 'barriaultphotography.herokuapp.com' }
 
   # Enable threaded mode
   # config.threadsafe!

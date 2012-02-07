@@ -1,5 +1,9 @@
 BarriaultPhotography::Application.routes.draw do
   
+  resources :posts
+
+  devise_for :users
+
   match "photography" => redirect("http://barriault.smugmug.com")
   match 'blog' => 'blog#index'
   match 'programming' => 'programming#index'

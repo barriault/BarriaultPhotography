@@ -7,21 +7,19 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="topbar topbar-fixed-top">
-	  <div class="topbar-inner">
-	    <div class="container">
-				<%= link_to "Jeff Barriault", root_path, :class => "brand" %>
-	      <%= tabs %>
-	    </div>
-	  </div>
-	</div>
-	
+	<%= render 'shared/navigation' %>
+
 	<div class="container">
+		<% if flash[:alert] -%>
+		  <div class='alert alert-error'><%= h flash[:alert] %></div>
+		<% end -%>
+		<% if flash[:notice] -%>
+		  <div class='alert alert-success'><%= h flash[:notice] %></div>
+		<% end -%>    
+
 		<%= yield %>
 		
-		<footer>
-			<p>&copy; Jeff Barriault 2012</p>
-		</footer>
+		<%= render 'shared/footer' %>
 	</div>
 
 </body>

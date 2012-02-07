@@ -1,0 +1,22 @@
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+			<%= link_to "Jeff Barriault", root_path, :class => "brand" %>
+			<ul class="nav">
+				<% if current_page?(root_path) %><li class="active"><% else %><li><% end %><%= link_to "Home", root_path %></li>
+				<li><%= link_to "Photography", photography_path %></li>
+				<% if current_page?(posts_path) %><li class="active"><% else %><li><% end %><%= link_to "Blog", posts_path %></li>
+				<% if current_page?(programming_path) %><li class="active"><% else %><li><% end %><%= link_to "Programming", programming_path %></li>
+				<% if current_page?(about_path) %><li class="active"><% else %><li><% end %><%= link_to "About", about_path %></li>
+				<% if current_page?(contact_path) %><li class="active"><% else %><li><% end %><%= link_to "Contact", contact_path %></li>
+			</ul>
+			<p class="navbar-text pull-right">
+			<% if user_signed_in? -%>
+				<%= link_to('Sign Out', destroy_user_session_path, :method => :delete) %>
+			<% else -%>
+				<%= link_to('Sign In', new_user_session_path)  %>
+			<% end -%>
+			</p>
+    </div>
+  </div>
+</div>
