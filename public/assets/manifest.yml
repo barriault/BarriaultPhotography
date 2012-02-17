@@ -1,5 +1,25 @@
 ---
+facebook_128.png: facebook_128-14204981859640bc5e33a89ac3de1b4f.png
+facebook_256.png: facebook_256-18d21a8d9f8bc66d819edd1e81f78b37.png
+facebook_32.png: facebook_32-32c896e072499dd9ca6850f4133645d4.png
+facebook_64.png: facebook_64-654f0f2c1ba7e19e730d497947534230.png
+github_128.png: github_128-1b4506a265b6cac172fdedf2b6aa8d72.png
+github_256.png: github_256-b2e747dbe3522ac39fd1e0e2acb52367.png
+github_32.png: github_32-9f027aeb4fdc741c895ffa4395b7bb02.png
+github_64.png: github_64-93e37ad968033b9b2b3e5f8d8a8ffa3f.png
+google_128.png: google_128-5a6ca87ddf3a480e13c06311f529729e.png
+google_256.png: google_256-ac5ad4bc02a385bf13c5bcd99d4e20fb.png
+google_32.png: google_32-ea6f557aa7493f24eb606ac40f44fea1.png
+google_64.png: google_64-9ca9d205e8d60cd33af9f5c1d41b07ef.png
+linkedin_128.png: linkedin_128-08ad80dafd349f2bc0e22c4f90018084.png
+linkedin_256.png: linkedin_256-9ec437616b56ead5bc23225fe6c6f117.png
+linkedin_32.png: linkedin_32-72e8e2e62c4fbe8c9e48a82da6289bee.png
+linkedin_64.png: linkedin_64-e4c2a75cc766b6139b4d46c77cb86340.png
 rails.png: rails-782b548cc1ba7f898cdad2d9eb8420d2.png
+twitter_128.png: twitter_128-a3f51e30b3f173ee70c9ff161e5b7cb9.png
+twitter_256.png: twitter_256-fd3b8237499a2274be7bef5f66afbd78.png
+twitter_32.png: twitter_32-9d2707961b1a73db59c8ef68fc98f979.png
+twitter_64.png: twitter_64-69259a9934533f33d0a13479590c75fd.png
 application.js: application-8d4d6f1152621f36cde4ecaea98f02f6.js
 application.css: application-984d429c5d3742212af21c3287ec4d52.css
 twitter/bootstrap/glyphicons-halflings-white.png: twitter/bootstrap/glyphicons-halflings-white-4fbb6a0b9b4e61912f486ac494a858f1.png
