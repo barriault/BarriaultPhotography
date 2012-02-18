@@ -1,19 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Title:</b>
-  <%= @post.title %>
-</p>
+<h2><%= @post.title %></h2>
+<%= raw RedCloth.new(@post.content).to_html %>
 
-<p>
-  <b>Content:</b>
-  <%= @post.content %>
-</p>
-
-<p>
-  <b>Published at:</b>
-  <%= @post.published_at %>
-</p>
+<div class="alert alert-info"><i class="icon-calendar"></i> <%= @post.published_date %></div>
 
 
 <%= link_to 'Edit', edit_post_path(@post) %> |

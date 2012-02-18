@@ -13,7 +13,7 @@
 		    <%= link_to 'Destroy', post, :class => 'btn btn-danger', confirm: 'Are you sure?', method: :delete %>
 				<% end -%>
 			</h2>
-		  <p><%= post.content %></p>
+		  <p><%= raw RedCloth.new(post.content).to_html %></p>
 		  <div class="alert alert-info"><i class="icon-calendar"></i> <%= post.published_date %></div>
 		<% end %>
 	</div>
