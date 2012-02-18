@@ -16,5 +16,5 @@
 //= require jqFancyTransitions.1.8.min
 
 $(document).ready( function(){
-	$('#slideshowHolder').jqFancyTransitions({ width: 800, height: 600, titleOpacity: 0.0 });
+	$('#slideshowHolder').jqFancyTransitions({ width: 800, height: 536, titleOpacity: 0.0 });
 });
