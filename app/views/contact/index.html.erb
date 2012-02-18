@@ -1,11 +1,51 @@
-<div class="hero-unit">
-	<address>
-		<strong>Jeff Barriault</strong><br>
-		Bayou Vista, TX<br>
-		Mobile: (281) 797-7667
-	</address>
-
-	<address>
-		<%= mail_to "jeff@barriault.net", "Email me . . .", :encode => "javascript" %>
-	</address>
+<div class="row">
+	
+	<div class="span2">
+		<address>
+			<strong><i class="icon-envelope"></i> <%= mail_to "jeff@barriault.net", "Jeff Barriault", :encode => "javascript" %></strong><br>
+			<i class="icon-home"></i> Bayou Vista, TX<br>
+			<i class="icon-signal"></i> (281) 797-7667
+		</address>
+	</div>
+	
+	<div class="span1">
+		<%= link_to image_tag("facebook_64.png", :class => "thumbnail"), "http://www.facebook.com/100000080021994", :target => "_blank" %>
+	</div>
+	
+	<div class="span1">
+		Jeff's Facebook Profile
+	</div>
+	
+	<div class="span1">
+		<%= link_to image_tag("facebook_64.png", :class => "thumbnail"), "http://www.facebook.com/pages/Barriault-Photography/319732201403106", :target => "_blank" %>
+	</div>
+	
+	<div class="span1">
+		Barriault Photography Page
+	</div>
+	
+	<div class="span1">
+		<%= link_to image_tag("linkedin_64.png", :class => "thumbnail"), "http://www.linkedin.com/pub/jeff-barriault/46/7/97", :target => "_blank" %>
+	</div>
+	
+	<div class="span1">
+		Jeff's LinkedIn Profile
+	</div>
+	
+	<div class="span1">
+		<%= link_to image_tag("twitter_64.png", :class => "thumbnail"), "https://twitter.com/JeffBarriault", :target => "_blank" %>
+	</div>
+	
+	<div class="span1">
+		Jeff's Twitter Page
+	</div>
+	
+	<div class="span1">
+		<%= link_to image_tag("github_64.png", :class => "thumbnail"), "https://github.com/barriault", :target => "_blank" %>
+	</div>
+	
+	<div class="span1">
+		Jeff's GitHub Profile
+	</div>
+	
 </div>
