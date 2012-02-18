@@ -1,12 +1,9 @@
 <div class="hero-unit" style="padding-left: 70px;">
 
 	<div id='slideshowHolder'>
-	 	<%= image_tag("http://barriault.smugmug.com/photos/724345895_WHVVS-L.jpg") %>
-	 	<%= image_tag("http://barriault.smugmug.com/photos/724346741_Fe5vG-L.jpg") %>
-	 	<%= image_tag("http://barriault.smugmug.com/photos/724346087_NqiZD-L.jpg") %>
-		<%= image_tag("http://barriault.smugmug.com/photos/724346315_Vx5pn-L.jpg") %>
-		<%= image_tag("http://barriault.smugmug.com/photos/724346622_Y9CQN-L.jpg") %>
-		<%= image_tag("http://barriault.smugmug.com/photos/724346454_TPM8m-L.jpg") %>
+		<% @photos.each do |photo| %>
+			<%= image_tag(photo.largeurl) %>
+		<% end %>	 	
 	</div>
 
 </div>

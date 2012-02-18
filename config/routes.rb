@@ -1,5 +1,7 @@
 BarriaultPhotography::Application.routes.draw do
   
+  resources :photos
+
   resources :posts
 
   devise_for :users
