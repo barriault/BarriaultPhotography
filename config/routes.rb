@@ -6,7 +6,7 @@ BarriaultPhotography::Application.routes.draw do
 
   devise_for :users
 
-  match "photography" => redirect("http://barriault.smugmug.com")
+  match "photography" => redirect("http://photography.barriault.net")
   match 'blog' => 'blog#index'
   match 'programming' => 'programming#index'
   match 'contact' => 'contact#index'

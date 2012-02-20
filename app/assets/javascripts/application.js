@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require jqFancyTransitions.1.8.min
+//= require prettify
 
 $(document).ready( function(){
 	$('#slideshowHolder').jqFancyTransitions({ width: 800, height: 536, titleOpacity: 0.0 });

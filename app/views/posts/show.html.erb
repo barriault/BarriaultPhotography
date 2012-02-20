@@ -1,7 +1,5 @@
-<p id="notice"><%= notice %></p>
-
 <h2><%= @post.title %></h2>
-<%= raw RedCloth.new(@post.content).to_html %>
+<%= markdown(@post.content) %>
 
 <div class="alert alert-info"><i class="icon-calendar"></i> <%= @post.published_date %></div>
 
