@@ -1,16 +1,9 @@
-<div class="hero-unit">
-	<h2>Summary</h2>
-
-	<p>Combining nearly 30 years of highly technical experience in the areas of enterprise level software development, systems integration engineering, database design and data migration, consulting, training, and technical documentation, I am adept at utilizing my functional skills to perform problem analysis, recommending the best solutions, and utilizing my technical skills to implement solutions in a timely and cost effective manner. I function well in fast-paced, continuously changing environments where my capacity to prioritize responsibilities and manage multiple projects simultaneously coupled with my aptitude to learn new programming languages, technologies and tools at a highly accelerated rate are utilized. I demonstrate exceptional attention to detail and the capability to effectively communicate with all levels of the organization.</p>
-
-</div>
-
 <div class="row">
 	
 	<div class="span6">
 		<h2>Specialties</h2>
 
-		<p>Writing stable, bug free software and data driven web applications using MS Windows/.NET technologies, Java, Ruby on Rails, and various open source libraries. </p>
+		<p>Writing stable, enterprise class, bug free software and data driven web applications using Ruby on Rails, .NET, Java, and various open source libraries. </p>
 	</div>
 	
 	<div class="span6">
@@ -19,4 +12,39 @@
 		<p>Please <%= link_to "contact me", contact_path %> with any questions. For a complete list of my work experience and references, please see my <%= link_to "LinkedIn", "http://www.linkedin.com/pub/jeff-barriault/46/7/97", :target => "_blank" %> profile. You can also view some of my projects/source code on <%= link_to "GitHub", "https://github.com/barriault", :target => "_blank" %>.</p>
 	</div>
 		
+</div>
+
+<div class="hero-unit">
+<pre class="prettyprint linenums">
+<code class="language-rb">class JeffBarriault &lt; ProgrammerAnalyst
+  acts_as_consultant { :experience => "Nearly 30 years!" }
+
+  def methodologies
+    [ "OOP", "DDD", "TDD", "Design Patterns", "WCF", "SOAP", "REST", "AJAX" ]
+  end
+
+  def operating_systems
+    [ "Apple OS X", "Microsoft Windows", "Linux" ]
+  end
+
+  def programming_languages
+    [ "Ruby", "C#.NET", "Java", "JavaScript" ]
+  end
+
+  def development_environments
+    [ "TextMate". "Xcode", "Visual Studio", "Eclipse" ]
+  end
+
+  def web_frameworks_and_libraries
+    [ "Ruby on Rails", "jQuery", "ASP.NET MVC", "S#arp Architecture", "Hibernate/NHibernate" ]
+  end
+
+  def databases
+    [ "Oracle", "Microsoft SQL Server", "PostgreSQL", "MySQL", "SQLite", "MS Access" ]
+  end
+
+  def source_control
+    [ "Git", "SVN", "Microsoft Team Foundation" ]
+  end
+end</code></pre>
 </div>
