@@ -6,6 +6,7 @@ gem 'thin'
 gem 'smile'
 gem 'redcarpet'
 gem 'devise'
+gem 'figaro'
 
 group :production do
   gem 'pg'
